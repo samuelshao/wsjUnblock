@@ -3,7 +3,8 @@
 var newHeader = {
 	referer: {
 		name: "Referer",
-		value: "https://www.twitter.com", // or "https://www.facebook.com"
+		value: "https://www.facebook.com", // or "https://www.facebook.com"
+		//value: "https://www.twitter.com", // or "https://www.facebook.com"
 	},
 	cookie: {
 		name: "Cookie",
