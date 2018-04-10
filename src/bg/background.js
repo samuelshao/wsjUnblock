@@ -21,6 +21,10 @@ var sites = {
 		url: "*://*.wsj.com/*",
 		js: "*://*/*cxense-candy.js" // this one causing a pop up advertisement for every article
 	},
+	wsjcn: {
+		url: "*://cn.wsj.com/*",
+		js: "*://*/*cxense-candy.js"
+	},
 	ft: {
 		url: "*://*.ft.com/*",
 	},
@@ -35,7 +39,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 		
 		return { cancel: true };
 	}, {
-		urls: [ sites.nyt.js, sites.wsj.js ],
+		urls: [ sites.nyt.js, sites.wsj.js, sites.wsjcn.js ],
 		// target is script
 		types: [ "script" ]
 	},
@@ -61,7 +65,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
 		return { requestHeaders: details.requestHeaders };
 	}, {
-		urls: [ sites.wsj.url, sites.ft.url ],
+		urls: [ sites.wsj.url, sites.ft.url, sites.wsjcn.url ],
 		// target is the document that is loaded for a top-level frame
 		types: [ "main_frame" ]
 	},
