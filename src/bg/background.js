@@ -31,6 +31,9 @@ var sites = {
 	nyt: {
 		js: "*://*.com/*mtr.js" // this one causing a pop up asking for subscription
 	}
+	bloomberg: {
+		url: "*://*.bloomberg.com/*",
+	}
 };
 
 chrome.webRequest.onBeforeRequest.addListener(
