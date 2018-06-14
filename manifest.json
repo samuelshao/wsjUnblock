@@ -24,6 +24,8 @@
     "https://*.nytimes.com/*",
     "http://*.nytimes.com/*",
     "https://*.nyt.com/*",
-    "http://*.nyt.com/*"
+    "http://*.nyt.com/*",
+    "http://www.bloomberg.com/*",
+    "https://www.bloomberg.com/*"
   ]
 }
