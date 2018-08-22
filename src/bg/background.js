@@ -33,6 +33,9 @@ var sites = {
 	},
 	bloomberg: {
 		url: "*://*.bloomberg.com/*",
+	},
+	initium: {
+		url: "*://*.theinitium.com/*,
 	}
 };
 
@@ -68,7 +71,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
 		return { requestHeaders: details.requestHeaders };
 	}, {
-		urls: [ sites.wsj.url, sites.ft.url, sites.wsjcn.url ],
+		urls: [ sites.wsj.url, sites.ft.url, sites.wsjcn.url, sites.initium.url ],
 		// target is the document that is loaded for a top-level frame
 		types: [ "main_frame" ]
 	},
