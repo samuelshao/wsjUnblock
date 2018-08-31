@@ -35,7 +35,7 @@ var sites = {
 		url: "*://*.bloomberg.com/*",
 	},
 	initium: {
-		url: "*://*.theinitium.com/*,
+		url: "*://*.theinitium.com/*"
 	}
 };
 
